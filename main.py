@@ -23,6 +23,3 @@ for i in range(r):
         with open("location.txt","a") as file:
             file.write(str(point))
             file.write(" \n")
-            
-
-
