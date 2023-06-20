@@ -20,6 +20,11 @@ for i in range(r):
     for point in shapes[i].points:
         print(point)
 
+        with open("location.txt","a") as file:
+            file.write(str(point))
+            file.write(" \n")
+            
+
 
 
 
