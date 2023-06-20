@@ -26,24 +26,3 @@ for i in range(r):
             
 
 
-
-
-
-
-
-# import shapefile
-
-# # Open the shapefile
-# sf = shapefile.Reader(r"shp\shape.shp")
-
-# # Get the first feature (assuming there is only one)
-# feature = sf.shapeRecords()[0]
-
-# # Get the shape object
-# shape = feature.shape
-
-# # Extract the coordinates from the shape object
-# coordinates = [(i[0], i[1]) for i in shape.points]
-
-# # Output the coordinates
-# print(coordinates)
