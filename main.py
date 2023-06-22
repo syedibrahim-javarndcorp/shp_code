@@ -1,7 +1,9 @@
 import shapefile    
 import os
 
-shp_path = r"shp\shape.shp"
+file_name = input("Enter the file name with .txt : ")
+
+shp_path = r"shp\D\D.shp"
 assert os.path.exists(shp_path)
 sf = shapefile.Reader(shp_path)
 
@@ -20,6 +22,6 @@ for i in range(r):
     for point in shapes[i].points:
         print(point)
 
-        with open("location.txt","a") as file:
+        with open(file_name,"a") as file:
             file.write(str(point))
             file.write("\n")
