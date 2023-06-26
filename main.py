@@ -1,22 +1,15 @@
 import shapefile    
 import os
 
-file_name = input("Enter the file name with .txt : ")
+file_name = input("Enter the file name with the format : ")
 
 shp_path = r"shp\D\D.shp"
 assert os.path.exists(shp_path)
 sf = shapefile.Reader(shp_path)
 
 shapes = sf.shapes()
-print("===================================================================")
-print(shapes)
-print("===================================================================")
 
 r = len(shapes)
-
-print("===================================================================")
-print(r)
-print("===================================================================")
 
 for i in range(r):
     for point in shapes[i].points:
